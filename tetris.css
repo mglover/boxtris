@@ -1,0 +1,113 @@
+/* main layout */
+body {
+    background: #888;
+    color: tan;
+}
+#container {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.bigbox {
+    background: #555;
+}
+
+.littlebox {
+    color: pink;
+    margin: 20px;
+}
+
+
+/* sidebar windows */
+#sidebar {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 30%;
+}
+#score {
+    font-size: 300%;
+    text-align: center;
+}
+#help {
+    font-size: 75%;
+}
+
+/* game/menu window */
+#play {
+    position: absolute;
+    top: 0px;
+    left: 40%;
+}
+
+#board {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+#menu {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+
+    width: calc(min(4.55vh, 5vw)  * 10);
+    height: calc( (min(4.55vh, 5vw) -2px ) * 22);
+    background: #6af;
+
+    font-size: 300%;
+    text-align: center;
+
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+/* cell sizing -- board is 10 x 22 cells*/
+table {
+    border-spacing: 0px;
+}
+.cell {
+    font-size: 50%;
+    min-height: calc(min(4.55vh, 5vw) - 2px);
+    height: calc(min(4.55vh, 5vw) - 2px);
+    min-width: calc(min(4.55vh, 5vw) - 2px);
+    width: calc(min(4.55vh, 5vw) - 2px);
+}
+#stats .cell {
+    height: 20px;
+    width: 20px;
+}
+
+
+/* cell colors */
+.empty {
+    background: #000;
+}
+.square {
+    background: #afa;
+}
+.rightEl {
+    background: #f00;
+}
+.leftEl {
+    background: #0ff;
+}
+.rightEs {
+    background: #fff;
+}
+.leftEs {
+    background: #147;
+}
+.tee {
+    background: #0f0;
+}
+.long {
+    background: #808;
+}
+

@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Tetris</title>
+<link rel="stylesheet" href="./tetris.css">
+<script type="text/javascript" src="./matrixtools.js"></script>
+<script type="text/javascript" src="./shapetools.js"></script>
+<script type="text/javascript" src="./tetris.js"></script>
+</head>
+<body onload="play()" onkeypress="keypress(event)">
+<div id="container">
+  <div id="sidebar" class="bigbox">
+    <div id="status" class="littlebox">
+      <span id="score"></span><br/>
+      <span class="sh">Rows:</span><span class="sv" id="rows"></span><br/>
+      <span class="sh">Level:</span><span class="sv" id="level"></span<br/>
+    </div>
+    <div id="preview" class="tablebox"></div>
+    <div id="stats" class="tablebox"></div>
+    <div id="help" class="littlebox">
+      Keys:<ul>
+	<li>Left: A</li>
+        <li>Down: S</li>
+        <li>Right: D</li>
+        <li>Rotate: W</li>
+	<li>Drop: Space</li>
+	<li>Pause: P</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="play" class="bigbox">
+    <div id="menu" class="hidden"></div>
+    <div id="board" class="tablebox"></div>
+  </div>
+</div>
+</body>
+
+</html>
